@@ -6,13 +6,13 @@ variable "ado_org_service_url" {
 variable "ado_github_repo" {
   type        = string
   description = "Name of the repository in the format <GitHub Org>/<RepoName>"
-  default     = "ned1313/terraform-tuesdays"
+  default     = "v-it-azure/ado01"
 }
 
 variable "ado_pipeline_yaml_path_1" {
   type        = string
   description = "Path to the yaml for the first pipeline"
-  default     = "2021-05-11-ADO/vnet/azure-pipelines.yaml"
+  default     = "vnet/azure-pipelines.yaml"
 }
 
 variable "ado_github_pat" {
@@ -24,12 +24,12 @@ variable "ado_github_pat" {
 variable "prefix" {
   type        = string
   description = "Naming prefix for resources"
-  default     = "tacos"
+  default     = "ado01"
 }
 
 variable "az_location" {
   type    = string
-  default = "eastus"
+  default = "centralus"
 }
 
 variable "az_container_name" {
