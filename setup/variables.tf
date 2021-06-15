@@ -3,11 +3,11 @@ variable "ado_org_service_url" {
   description = "Org service url for Azure DevOps"
 }
 
-#variable "ado_github_repo" {
-#  type        = string
-#  description = "Name of the repository in the format <GitHub Org>/<RepoName>"
-#  default     = "v-it-azure/ado01"
-#}
+variable "ado_github_repo" {
+  type        = string
+  description = "Name of the repository in the format <GitHub Org>/<RepoName>"
+  default     = "v-it-azure/ado01"
+}
 
 variable "ado_pipeline_yaml_path_1" {
   type        = string
